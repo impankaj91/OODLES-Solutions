@@ -1,0 +1,17 @@
+docker-compose version 1.26.2
+
+Step1: Create a directory (docker-compose) and change directory to docker-compose.
+
+Step2: Create a  .yml to lauch containers and write code.
+
+Step3: Start and Run .yml file using docker-compose up -d
+
+Step4: check container running.(docker ps )
+
+Step5: now , go into the nginx image docker(using docker exec)
+
+Step7:edit nginx index.html (vim /usr/share/nginx/html/index.html)
+
+Step8:Content of index.html -> Hello from service 3.
+
+Step9:Enter the container ip addr and check website.

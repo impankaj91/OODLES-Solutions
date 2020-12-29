@@ -1,0 +1,14 @@
+OS:Centos 7
+Docker version 1.13.1, build 0be3e21/1.13.1
+
+Step 1: Install Docker using yum install docker -y
+
+Step 2: Check docker version(docker -v)
+
+Step 3: Create a Directory(mkdir -p ubuntu/dockerfiles)
+
+Step 4:Create a Dockerfile(Base Image Ubuntu and Print Hello From Docker 1).
+
+Step 5:Build a Image using Dockerfile(docker build -t dockerimage1 .)
+
+Step 6:Rename dockerfile to dockerfile-1

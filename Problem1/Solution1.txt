@@ -1,0 +1,10 @@
+Step1: create a devops vpc.
+   1) name : devops(10.0.0.0/16)
+   2) create a public subnet:public dev(10.0.1.0/24)
+   3) create a internet gateway and attach to devops vpc.
+   4) create a public route(devops_public_route) and in edit route add(0.0.0.0/0 ->IGW) and edit the subnet association.
+
+Step2:Now , We can create ec2 instance in devops vpc.
+   1)Using Ubuntu AMI,T2.micro,devopsvpc,root storage,devops SG(name:devops) configure instance.
+   2)Create a Key Pair and Launch Instance.
+   3)Using Putty we can access instance(default user:ubuntu). 

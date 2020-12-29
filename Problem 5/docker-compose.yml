@@ -1,0 +1,19 @@
+version: "3"
+
+networks:
+  mynetwork:
+services:
+  service1:
+    image: dockerimage1
+    ports:
+      - "91:91"
+  service2:
+    image: dockerimage2
+    ports:
+      - "92:92"
+  service3:
+    image: nginx
+    ports:
+      - "80:93"
+    networks:
+      - mynetwork
